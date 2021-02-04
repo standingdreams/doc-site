@@ -22,9 +22,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/standingdreams/doc-site',
           label: 'GitHub',
           position: 'right',
         },
@@ -101,5 +100,13 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+      [
+        'docusaurus2-dotenv',
+        {
+          path: "./.env",
+        }
+      ]
   ],
 };
